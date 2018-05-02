@@ -173,6 +173,7 @@
             this.actualizarCotizacionToolStripMenuItem.Name = "actualizarCotizacionToolStripMenuItem";
             this.actualizarCotizacionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.actualizarCotizacionToolStripMenuItem.Text = "Actualizar Cotizacion";
+            this.actualizarCotizacionToolStripMenuItem.Click += new System.EventHandler(this.actualizarCotizacionToolStripMenuItem_Click);
             // 
             // dtpfac
             // 

@@ -167,5 +167,11 @@ namespace facturayan
             actcli f = new actcli();
             f.Show();
         }
+
+        private void actualizarCotizacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            actcoti f = new actcoti();
+            f.Show();
+        }
     }
 }
