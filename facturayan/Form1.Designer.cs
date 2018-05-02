@@ -288,6 +288,7 @@
             this.txtfactn.Size = new System.Drawing.Size(100, 20);
             this.txtfactn.TabIndex = 9;
             this.txtfactn.TextChanged += new System.EventHandler(this.txtfactn_TextChanged);
+            this.txtfactn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtfactn_KeyDown);
             // 
             // label9
             // 
@@ -403,6 +404,7 @@
             this.btnagre.Text = "Agregar";
             this.btnagre.UseVisualStyleBackColor = true;
             this.btnagre.Click += new System.EventHandler(this.btnagre_Click);
+            this.btnagre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnagre_KeyDown);
             // 
             // Form1
             // 
@@ -419,6 +421,7 @@
             this.Name = "Form1";
             this.Text = "Tu estilo";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

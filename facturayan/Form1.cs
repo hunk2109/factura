@@ -117,6 +117,7 @@ namespace facturayan
             oper.consultasinreaultado("insert into cotizacion(descrip,cantidad,precio,cliente_id_clie,factura_id_fac)values('" + cmbproducto.Text + "','" + txtcantidad.Text + "','" + txtprecio.Text + "','"+txtid.Text+"','"+ txtfactn.Text+"')");
             
             dgvcoti.DataSource = oper.cosnsultaconresultado("select descrip as Descripcion,cantidad as Cantidad,precio as Precio,(cantidad*precio) as Importe,cliente_id_clie as Cliente,factura_id_fac as Factura  from cotizacion where factura_id_fac = '"+txtfactn.Text+"' ");
+
         }
 
         private void agregarProductosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -172,6 +173,39 @@ namespace facturayan
         {
             actcoti f = new actcoti();
             f.Show();
+        }
+
+        private void btnagre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                operaciones oper = new operaciones();
+                oper.consultasinreaultado("insert into cotizacion(descrip,cantidad,precio,cliente_id_clie,factura_id_fac)values('" + cmbproducto.Text + "','" + txtcantidad.Text + "','" + txtprecio.Text + "','" + txtid.Text + "','" + txtfactn.Text + "')");
+
+                dgvcoti.DataSource = oper.cosnsultaconresultado("select descrip as Descripcion,cantidad as Cantidad,precio as Precio,(cantidad*precio) as Importe,cliente_id_clie as Cliente,factura_id_fac as Factura  from cotizacion where factura_id_fac = '" + txtfactn.Text + "' ");
+
+            }
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+
+        }
+
+        private void txtfactn_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                operaciones oper = new operaciones();
+                oper.consultasinreaultado("insert into cotizacion(descrip,cantidad,precio,cliente_id_clie,factura_id_fac)values('" + cmbproducto.Text + "','" + txtcantidad.Text + "','" + txtprecio.Text + "','" + txtid.Text + "','" + txtfactn.Text + "')");
+
+                dgvcoti.DataSource = oper.cosnsultaconresultado("select descrip as Descripcion,cantidad as Cantidad,precio as Precio,(cantidad*precio) as Importe,cliente_id_clie as Cliente,factura_id_fac as Factura  from cotizacion where factura_id_fac = '" + txtfactn.Text + "' ");
+
+            }
+
+
         }
     }
 }

@@ -22,6 +22,8 @@ namespace facturayan
             operaciones oper = new operaciones();
             oper.consultasinreaultado("insert into producto(descripcion,precio)values('"+txtdecrip.Text+"','"+txtprecio.Text+"')");
             MessageBox.Show("Datos Guardados");
+            txtprecio.Text = "";
+            txtdecrip.Text = "";
         }
     }
 }
