@@ -76,6 +76,12 @@
     <Compile Include="actcli.Designer.cs">
       <DependentUpon>actcli.cs</DependentUpon>
     </Compile>
+    <Compile Include="actcoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actcoti.Designer.cs">
+      <DependentUpon>actcoti.cs</DependentUpon>
+    </Compile>
     <Compile Include="actualizarp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="actcli.resx">
       <DependentUpon>actcli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="actcoti.resx">
+      <DependentUpon>actcoti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="actualizarp.resx">
       <DependentUpon>actualizarp.cs</DependentUpon>

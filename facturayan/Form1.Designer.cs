@@ -36,8 +36,11 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cotizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarCotizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dtpfac = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -61,9 +64,6 @@
             this.dgvcoti = new System.Windows.Forms.DataGridView();
             this.btnimpri = new System.Windows.Forms.Button();
             this.btnagre = new System.Windows.Forms.Button();
-            this.actualizarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cotizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarCotizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbx.SuspendLayout();
@@ -127,16 +127,23 @@
             // agregarClientesToolStripMenuItem
             // 
             this.agregarClientesToolStripMenuItem.Name = "agregarClientesToolStripMenuItem";
-            this.agregarClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarClientesToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.agregarClientesToolStripMenuItem.Text = "Agregar Clientes";
             this.agregarClientesToolStripMenuItem.Click += new System.EventHandler(this.agregarClientesToolStripMenuItem_Click);
             // 
             // verClientesToolStripMenuItem
             // 
             this.verClientesToolStripMenuItem.Name = "verClientesToolStripMenuItem";
-            this.verClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verClientesToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.verClientesToolStripMenuItem.Text = "Ver Clientes";
             this.verClientesToolStripMenuItem.Click += new System.EventHandler(this.verClientesToolStripMenuItem_Click);
+            // 
+            // actualizarClienteToolStripMenuItem
+            // 
+            this.actualizarClienteToolStripMenuItem.Name = "actualizarClienteToolStripMenuItem";
+            this.actualizarClienteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.actualizarClienteToolStripMenuItem.Text = "Actualizar Cliente";
+            this.actualizarClienteToolStripMenuItem.Click += new System.EventHandler(this.actualizarClienteToolStripMenuItem_Click);
             // 
             // facturaToolStripMenuItem
             // 
@@ -152,6 +159,20 @@
             this.verFacturaToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.verFacturaToolStripMenuItem.Text = "Ver Factura";
             this.verFacturaToolStripMenuItem.Click += new System.EventHandler(this.verFacturaToolStripMenuItem_Click);
+            // 
+            // cotizacionToolStripMenuItem
+            // 
+            this.cotizacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.actualizarCotizacionToolStripMenuItem});
+            this.cotizacionToolStripMenuItem.Name = "cotizacionToolStripMenuItem";
+            this.cotizacionToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.cotizacionToolStripMenuItem.Text = "Cotizacion";
+            // 
+            // actualizarCotizacionToolStripMenuItem
+            // 
+            this.actualizarCotizacionToolStripMenuItem.Name = "actualizarCotizacionToolStripMenuItem";
+            this.actualizarCotizacionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.actualizarCotizacionToolStripMenuItem.Text = "Actualizar Cotizacion";
             // 
             // dtpfac
             // 
@@ -381,27 +402,6 @@
             this.btnagre.Text = "Agregar";
             this.btnagre.UseVisualStyleBackColor = true;
             this.btnagre.Click += new System.EventHandler(this.btnagre_Click);
-            // 
-            // actualizarClienteToolStripMenuItem
-            // 
-            this.actualizarClienteToolStripMenuItem.Name = "actualizarClienteToolStripMenuItem";
-            this.actualizarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.actualizarClienteToolStripMenuItem.Text = "Actualizar Cliente";
-            this.actualizarClienteToolStripMenuItem.Click += new System.EventHandler(this.actualizarClienteToolStripMenuItem_Click);
-            // 
-            // cotizacionToolStripMenuItem
-            // 
-            this.cotizacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.actualizarCotizacionToolStripMenuItem});
-            this.cotizacionToolStripMenuItem.Name = "cotizacionToolStripMenuItem";
-            this.cotizacionToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.cotizacionToolStripMenuItem.Text = "Cotizacion";
-            // 
-            // actualizarCotizacionToolStripMenuItem
-            // 
-            this.actualizarCotizacionToolStripMenuItem.Name = "actualizarCotizacionToolStripMenuItem";
-            this.actualizarCotizacionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.actualizarCotizacionToolStripMenuItem.Text = "Actualizar Cotizacion";
             // 
             // Form1
             // 
