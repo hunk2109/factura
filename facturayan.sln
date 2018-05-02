@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facturayan", "facturayan\facturayan.csproj", "{CF4AA6FF-AE59-4471-8C6D-98BC6A141105}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Tu Estilof", "Tu Estilof\Tu Estilof.vdproj", "{6044DA67-0E4D-4402-9B3E-F9B7ABF591A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{CF4AA6FF-AE59-4471-8C6D-98BC6A141105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF4AA6FF-AE59-4471-8C6D-98BC6A141105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF4AA6FF-AE59-4471-8C6D-98BC6A141105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6044DA67-0E4D-4402-9B3E-F9B7ABF591A2}.Debug|Any CPU.ActiveCfg = Debug
+		{6044DA67-0E4D-4402-9B3E-F9B7ABF591A2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

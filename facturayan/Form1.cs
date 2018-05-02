@@ -56,7 +56,7 @@ namespace facturayan
             }
 
 
-            dgvcoti.DataSource = oper.cosnsultaconresultado("select descrip as Descripcion, cantidad as Cantidad, precio as Precio, (cantidad * precio) as Importe, cliente_id_clie as Cliente, factura_id_fac as Factura  from cotizacion inner join cliente on cliente_id_clie = id_clie");
+            
 
         }
 
